@@ -1,10 +1,11 @@
+<!--主体部分-->
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Hexo</title>
+  <title>CK&#39;BLOG</title>
   
   
 
@@ -25,6 +26,8 @@
   
 
   
+  <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico">
+  
 
   
     
@@ -43,21 +46,34 @@
 <meta name="generator" content="Hexo 4.2.0"></head>
 
 <body>
+<!-- 代码雨部分 -->
+<canvas id="canvas" width="1440" height="900" ></canvas>
+<script type="text/javascript" src="/js/DigitalRain.js"></script>
+<!--点击烟花爆炸效果-->
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
+<script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+<script type="text/javascript" src="/js/fireworks.js"></script>
+
+<!--浏览器搞笑标题-->
+<script type="text/javascript" src="/js/FunnyTitle.js"></script>
   
   
   <div class="cover-wrapper">
     <cover class='cover  half'>
       
-        
-  <h1 class='title'>Demo</h1>
+        <!--开头部分-->
+
+  <h1 class='title'>CK'BLOG</h1>
+
 
 
   <div class="m_search">
     <form name="searchform" class="form u-search-form">
-      <input type="text" class="input u-search-input" placeholder="" />
+      <input type="text" class="input u-search-input" placeholder="世界之大，探索一下！" />
       <i class="icon fas fa-search fa-fw"></i>
     </form>
   </div>
+
 
 <div class='menu navgation'>
   <ul class='h-list'>
@@ -68,7 +84,7 @@
             
             
             id="home">
-            <i class='fas fa-rss fa-fw'></i>&nbsp;博文
+            <i class='fas fa-rss fa-fw'></i>&nbsp;主页
           </a>
         </li>
       
@@ -107,18 +123,39 @@
   </ul>
 </div>
 
+<!--借鉴itrhx.com大佬流动字体样式-->
+<br/>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<div style="text-align: center;font-weight: bold;color: #1BC3FB;">
+  <span id="subtitle"></span>
+  <span id="typed-cursor"></span>
+</div>
+<script>
+  var typed = new Typed("#subtitle",
+          {strings:["没有捷径可走，你只需要练习",
+              "Live a good life, write some good code !!!",
+              "愿自己的努力终将获得回报",
+              "花开不是为了花落，而是为了开的更加灿烂。",
+              "没有伞的孩子必须努力奔跑！",
+              "欲望以提升热忱，毅力以磨平高山。",
+              "如果放弃太早，你永远都不知道自己会错过什么。",
+              "没有礁石，就没有美丽的浪花；没有挫折，就没有壮丽的人生。"],
+            startDelay:1000,typeSpeed:100,loop:!0,backSpeed:60,backDelay:2000,showCursor:!0})
+</script>
+
       
     </cover>
-    <header class="l_header pure">
+    <header class="l_header material">
   <div id="loading-bar-wrapper">
-    <div id="loading-bar" class="pure"></div>
+    <div id="loading-bar" class="material"></div>
   </div>
 
 	<div class='wrapper'>
 		<div class="nav-main container container--flex">
       <a class="logo flat-box" href='/' >
         
-          Hexo
+          CK'BLOG
         
       </a>
 			<div class='menu navgation'>
@@ -286,9 +323,176 @@
         
           
         
+          
+            
+              <div class='post-wrapper'>
+                <article class="post reveal ">
+  
+
+
+  <section class='meta'>
+    
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme=""
+    data-mini=true 
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="song"
+    data-id="1381597191"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    
+    
+      <a title='测试' href='/2020/02/03/test/'><img class='thumbnail' src='https://cdn.jsdelivr.net/gh/TRHX/ImageHosting/ITRHX-PIC/thumbnail/hexo.png'></a>
+    
+    <div class="meta" id="header-meta">
+      
+        
+  <h2 class="title">
+    <a href="/2020/02/03/test/">
+      测试
+    </a>
+  </h2>
+
+
+
+      
+      <div class='new-meta-box'>
+        
+          
+        
+          
+            
+  <div class='new-meta-item author'>
+    
+      <a href="http://yoursite.com" rel="nofollow">
+        
+          <img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg">
+        
+        <p>CK'BLOG</p>
+      </a>
+    
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+    <p>2020-02-03</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/%E5%88%86%E7%B1%BBC/%E5%88%86%E7%B1%BBD/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>test&nbsp;/&nbsp;hexo&nbsp;/&nbsp;test2&nbsp;/&nbsp;test3&nbsp;/&nbsp;分类A&nbsp;/&nbsp;分类B&nbsp;/&nbsp;分类C&nbsp;/&nbsp;分类D</p>
+    </a>
+  </div>
+
+
+          
+        
+          
+            
+  
+    <div class="new-meta-item wordcount">
+      <a class='notlink'>
+        <i class="fas fa-keyboard" aria-hidden="true"></i>
+        <p>字数统计:</p>
+        <p>70字</p>
+      </a>
+    </div>
+    <div class="new-meta-item readtime">
+      <a class='notlink'>
+        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+        <p>阅读时长≈</p>
+        <p>1分</p>
+      </a>
+    </div>
+  
+
+          
+        
+          
+            
+  <div class="new-meta-item top-post">
+    <a class='notlink'>
+      <i class="fas fa-angle-double-up" aria-hidden="true"></i>
+      <p>置顶</p>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+      
+        <hr>
+      
+    </div>
+  </section>
+
+
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
+      <p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="封面"></p>
+      
+        <div class="readmore">
+          <a href="/2020/02/03/test/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            阅读全文        <!--文章列表更换read more为中文ps：我真的找了好久！！！我太难了-->
+          </a>
+        </div>
+      
+    </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/markdown/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> markdown</a>
+        
+          <a href="/tags/hexo/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> hexo</a>
+        
+          <a href="/tags/test2/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> test2</a>
+        
+          <a href="/tags/test3/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> test3</a>
+        
+          <a href="/tags/test4/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> test4</a>
+        
+          <a href="/tags/test5/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> test5</a>
+        
+          <a href="/tags/%E5%88%86%E7%B1%BBA-%E5%88%86%E7%B1%BBB/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 分类A,分类B</a>
+        
+          <a href="/tags/%E5%88%86%E7%B1%BBC-%E5%88%86%E7%B1%BBD/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 分类C,分类D</a>
+        
+      </div>
+    
+  </section>
+</article>
+
+              </div>
+            
+          
+        
       
     
     
+      
+        
       
         
           <div class='post-wrapper'>
@@ -309,6 +513,7 @@
   </h2>
 
 
+
       
       <div class='new-meta-box'>
         
@@ -320,9 +525,9 @@
     
       <a href="http://yoursite.com" rel="nofollow">
         
-          <i class="fas fa-user" aria-hidden="true"></i>
+          <img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg">
         
-        <p>John Doe</p>
+        <p>CK'BLOG</p>
       </a>
     
   </div>
@@ -342,11 +547,34 @@
         
           
             
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/hexo/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>hexo</p>
+    </a>
+  </div>
+
 
           
         
           
             
+  
+    <div class="new-meta-item wordcount">
+      <a class='notlink'>
+        <i class="fas fa-keyboard" aria-hidden="true"></i>
+        <p>字数统计:</p>
+        <p>73字</p>
+      </a>
+    </div>
+    <div class="new-meta-item readtime">
+      <a class='notlink'>
+        <i class="fas fa-hourglass-half" aria-hidden="true"></i>
+        <p>阅读时长≈</p>
+        <p>1分</p>
+      </a>
+    </div>
   
 
           
@@ -371,11 +599,17 @@
         <div class="readmore">
           <a href="/2020/02/01/hello-world/" class="flat-box">
             <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-            Read More
+            阅读全文        <!--文章列表更换read more为中文ps：我真的找了好久！！！我太难了-->
           </a>
         </div>
       
     </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/markdown/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> markdown</a>
+        
+      </div>
     
   </section>
 </article>
@@ -395,6 +629,7 @@
 
 
 </div>
+
 <aside class='l_side'>
   
     
@@ -405,44 +640,72 @@
           
           
             
-              <section class='widget author'>
-  <div class='content pure'>
+              <!--博主信息小部件具体详情见material-x文档-->
+<section class='widget author'>
+  <div class='content material'>
     
       <div class='avatar'>
-        <img class='avatar' src='https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/avatar/avatar.png'/>
+        <img class='avatar' src='https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg'/>
       </div>
     
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
+
+        <!--添加显示文本-->
+        <div class="text">
+            <h2>๑۩ﺴ  CK'S BLOG  ﺴ۩๑</h2>
+        </div>
+
+        <!--彩色变换滚动字体-->
+        <div id="binft" style="text-align: center"></div>
+        <script>
+            var binft = function (r) {
+                function t() {
+                    return b[Math.floor(Math.random() * b.length)]
+                }
+                function e() {
+                    return String.fromCharCode(94 * Math.random() + 33)
+                }
+                function n(r) {
+                    for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+                        var l = document.createElement("span");
+                        l.textContent = e(), l.style.color = t(), n.appendChild(l)
+                    }
+                    return n
+                }
+                function i() {
+                    var t = o[c.skillI];
+                    c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+                }
+                var l = "",
+                    o = ["人生苦短，及时行乐", "人生天地间，忽如远行客。","斗酒相娱乐，聊厚不为薄。", "驱车策驽马，游戏宛与洛。","洛中何郁郁，冠带自相索。","长衢罗夹巷，王侯多第宅。","两宫遥相望，双阙百余尺。","极宴娱心意，戚戚何所迫？"].map(function (r) {
+                        return r + ""
+                    }),
+                    a = 2,
+                    g = 1,
+                    s = 5,
+                    d = 75,
+                    b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+                    c = {
+                        text: "",
+                        prefixP: -s,
+                        skillI: 0,
+                        skillP: 0,
+                        direction: "forward",
+                        delay: a,
+                        step: g
+                    };
+                i()
+            };
+            binft(document.getElementById('binft'));
+        </script>
+
+        <!--主题自带变换字体-->
+    <!---->
+
     
       <div class="social-wrapper">
         
           
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="mailto:me@xaoxuu.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-            </a>
-          
-        
-          
-            <a href="https://github.com/xaoxuu"
+            <a href="https://github.com/Javachenkang"
               class="social fab fa-github flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -450,8 +713,32 @@
           
         
           
-            <a href="https://music.163.com/#/user/home?id=63035382"
+            <a href="https://i.csdn.net/#/uc/profile"
+              class="social fab fa-cuttlefish flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="mailto:me@19951677741@163.com"
+              class="social fas fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=343905057"
               class="social fas fa-headphones-alt flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+            </a>
+          
+        
+          
+            <a href="http://wpa.qq.com/msgrd?v=3&uin=2058386844&site=qq&menu=yes"
+              class="social fab fa-qq flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
             </a>
@@ -494,16 +781,191 @@
           
           
             
-              <section class='widget plain'>
+              <!--侧边栏--纯文本小部件-->
+<section class='widget plain'>
   
-<header class='pure'>
-  <div><i class="fas fa-file fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文本部件</div>
+<header class='material'>
+  <div><i class="fas fa-handshake fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;欢迎光临</div>
   
 </header>
 
-  <div class='content pure'>
-    <p>这是一段支持markdown的文本<br><img src="https://img.vim-cn.com/4e/3c87a2fd28fd0b9c2f27ce3f83f1e9275d0488.png" alt=""></p>
+  <div class='content material'>
+    <!--借鉴itrhx.com大佬文本格式--> <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script> <script> var getOSAndBrowser=function(){ var os=navigator.platform; var userAgent=navigator.userAgent; var info=""; var tempArray=""; if(os.indexOf("Win")>-1){ if(userAgent.indexOf("Windows NT 5.0")>-1){ info+="Win2000" }else if(userAgent.indexOf("Windows NT 5.1")>-1){ info+="WinXP" }else if(userAgent.indexOf("Windows NT 5.2")>-1){ info+="Win2003" }else if(userAgent.indexOf("Windows NT 6.0")>-1){ info+="WindowsVista" }else if(userAgent.indexOf("Windows NT 6.1")>-1||userAgent.indexOf("Windows 7")>-1){ info+="Win7" }else if(userAgent.indexOf("Windows NT 6.2")>-1||userAgent.indexOf("Windows 8")>-1){ info+="Win8" }else if(userAgent.indexOf("Windows NT 6.3")>-1||userAgent.indexOf("Windows 8.1")>-1){ info+="Win8.1" }else if(userAgent.indexOf("Windows NT 10.0")>-1||userAgent.indexOf("Windows 10")>-1){ info+="Win10" }else{ info+="Other" } }else if(os.indexOf("Mac")>-1){ info+="Mac" }else if(os.indexOf("X11")>-1){ info+="Unix" }else if(os.indexOf("Linux")>-1){ info+="Linux" }else{ info+="Other" } info+="/"; var isOpera = userAgent.indexOf("Opera")>-1; var isIE = userAgent.indexOf("compatible")>-1&&userAgent.indexOf("MSIE")>-1&&!isOpera; var isEdge = userAgent.toLowerCase().indexOf("edge")>-1&&!isIE; var isIE11 = (userAgent.toLowerCase().indexOf("trident")>-1&&userAgent.indexOf("rv")>-1); if(/[Ff]irefox(\/\d+\.\d+)/.test(userAgent)){ tempArray=/([Ff]irefox)\/(\d+\.\d+)/.exec(userAgent); info+=tempArray[1]+tempArray[2] }else if(isIE){ var version=""; var reIE=new RegExp("MSIE (\\d+\\.\\d+);"); reIE.test(userAgent); var fIEVersion=parseFloat(RegExp["$1"]); if(fIEVersion==7){ version="IE7" }else if(fIEVersion==8){ version="IE8" }else if(fIEVersion==9){ version="IE9" }else if(fIEVersion==10){ version="IE10" }else{ version="0" } info+=version }else if(isEdge){ info+="Edge" }else if(isIE11){ info+="IE11" }else if(/[Cc]hrome\/\d+/.test(userAgent)){ tempArray=/([Cc]hrome)\/(\d+)/.exec(userAgent); info+=tempArray[1]+tempArray[2] }else if(/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent)){ tempArray=/[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent); info+=tempArray[3]+tempArray[1] }else if(/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent)){ tempArray=/([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent); info+=tempArray[1]+tempArray[2] }else{ info+="unknown" }return info }; document.write("欢迎来自"+returnCitySN["cname"]+"的朋友"); document.write("<br>您的IP是："+returnCitySN["cip"]); document.write("<br>您使用的是："+getOSAndBrowser()); </script> <!--天气插件--> <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tm&amp;skin=sogou" frameborder="0" width="270" height="24" allowtransparency="true"> </iframe>
+  </div>
+</section>
 
+<!--注释文件网页检查会有不用在意-->
+<!--<section class='widget plain'>
+  
+<header class='material'>
+  <div><i class="fas fa-handshake fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;欢迎光临</div>
+  
+</header>
+
+  <div class='content material'>
+    <div style="position: relative;">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=55wosd4tzl4&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async">
+      </script>
+    </div>
+  </div>
+</section>-->
+
+
+
+
+
+
+            
+          
+        
+          
+          
+            
+              <!--侧边栏--纯文本小部件-->
+<section class='widget plain'>
+  
+<header class='material'>
+  <div><i class="fas fa-globe fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;访客位置</div>
+  
+</header>
+
+  <div class='content material'>
+    <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=55wosd4tzl4&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"> </script>
+  </div>
+</section>
+
+<!--注释文件网页检查会有不用在意-->
+<!--<section class='widget plain'>
+  
+<header class='material'>
+  <div><i class="fas fa-globe fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;访客位置</div>
+  
+</header>
+
+  <div class='content material'>
+    <div style="position: relative;">
+      <script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=55wosd4tzl4&amp;m=7&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async">
+      </script>
+    </div>
+  </div>
+</section>-->
+
+
+
+
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              <section class='widget grid'>
+  
+<header class='material'>
+  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
+  
+</header>
+
+  <div class='content material'>
+    <ul class="grid navgation">
+      
+        <li><a class="flat-box" title="/" href="/"
+          
+          
+          id="home">
+          
+            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
+          
+          近期文章
+        </a></li>
+      
+        <li><a class="flat-box" title="/archives/" href="/archives/"
+          
+            rel="nofollow"
+          
+          
+          id="archives">
+          
+            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
+          
+          时间归档
+        </a></li>
+      
+        <li><a class="flat-box" title="/projects/" href="/projects/"
+          
+          
+          id="projects">
+          
+            <i class="fas fa-rss fa-fw fa-fw" aria-hidden="true"></i>
+          
+          RSS订阅
+        </a></li>
+      
+        <li><a class="flat-box" title="/friends/" href="/friends/"
+          
+            rel="nofollow"
+          
+          
+          id="friends">
+          
+            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
+          
+          我的友链
+        </a></li>
+      
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
+          
+            rel="nofollow"
+          
+          
+          id="https:xaoxuu.comwikimaterial-x">
+          
+            <i class="fas fa-comments fa-fw fa-fw" aria-hidden="true"></i>
+          
+          留言板
+        </a></li>
+      
+        <li><a class="flat-box" title="/about/" href="/about/"
+          
+            rel="nofollow"
+          
+          
+          id="about">
+          
+            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
+          
+          关于博主
+        </a></li>
+      
+    </ul>
   </div>
 </section>
 
@@ -522,7 +984,194 @@
           
           
         
+      
+        
           
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget category'>
+    
+<header class='material'>
+  <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章分类</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/categories/"
+    title="categories/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <ul class="entry">
+        
+          <li><a class="flat-box" title="/categories/hexo/" href="/categories/hexo/"><div class='name'>hexo</div><div class='badge'>(2)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/test/" href="/categories/test/"><div class='name'>test</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/test2/" href="/categories/test2/"><div class='name'>test2</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/test3/" href="/categories/test3/"><div class='name'>test3</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E5%88%86%E7%B1%BBA/" href="/categories/%E5%88%86%E7%B1%BBA/"><div class='name'>分类A</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/%E5%88%86%E7%B1%BBA/%E5%88%86%E7%B1%BBB/" href="/categories/%E5%88%86%E7%B1%BBA/%E5%88%86%E7%B1%BBB/"><div class='name'>分类B</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box" title="/categories/%E5%88%86%E7%B1%BBC/" href="/categories/%E5%88%86%E7%B1%BBC/"><div class='name'>分类C</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box child" title="/categories/%E5%88%86%E7%B1%BBC/%E5%88%86%E7%B1%BBD/" href="/categories/%E5%88%86%E7%B1%BBC/%E5%88%86%E7%B1%BBD/"><div class='name'>分类D</div><div class='badge'>(1)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget tagcloud'>
+    
+<header class='material'>
+  <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;文章标签</div>
+  
+    <a class="rightBtn"
+    
+      rel="nofollow"
+    
+    
+    href="/tags/"
+    title="tags/">
+    <i class="fas fa-expand-arrows-alt fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/markdown/" style="font-size: 24px; color: #555">markdown</a> <a href="/tags/test2/" style="font-size: 14px; color: #999">test2</a> <a href="/tags/test3/" style="font-size: 14px; color: #999">test3</a> <a href="/tags/test4/" style="font-size: 14px; color: #999">test4</a> <a href="/tags/test5/" style="font-size: 14px; color: #999">test5</a> <a href="/tags/%E5%88%86%E7%B1%BBA-%E5%88%86%E7%B1%BBB/" style="font-size: 14px; color: #999">分类A,分类B</a> <a href="/tags/%E5%88%86%E7%B1%BBC-%E5%88%86%E7%B1%BBD/" style="font-size: 14px; color: #999">分类C,分类D</a>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+
+  <section class='widget music'>
+    
+<header class='material'>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://music.163.com/#/playlist?id=482054834"
+    title="https://music.163.com/#/playlist?id=482054834">
+    <i class="far fa-heart fa-fw"></i></a>
+  
+</header>
+
+    <div class='content material'>
+      
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme="#1BCDFC"
+    
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="playlist"
+    data-id="482054834"
+    data-volume="0.7">
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
+
+            
           
         
           
@@ -556,15 +1205,15 @@
             
               <section class='widget list'>
   
-<header class='pure'>
+<header class='material'>
   <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
   
 </header>
 
-  <div class='content pure'>
+  <div class='content material'>
     <ul class="entry">
       
-        <li><a class="flat-box" title="https://xaoxuu.com/wiki/hexo.sh/" href="https://xaoxuu.com/wiki/hexo.sh/"
+        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/index.html" href="https://xaoxuu.com/wiki/material-x/index.html"
           
           
           >
@@ -572,20 +1221,7 @@
             
               <i class=" fa-fw" aria-hidden="true"></i>
             
-            &nbsp;&nbsp;Hexo脚本（Mac）
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://xaoxuu.com/wiki/vim-cn.sh/" href="https://xaoxuu.com/wiki/vim-cn.sh/"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;图床脚本（Mac）
+            &nbsp;&nbsp;制作本站
           </div>
           
         </a></li>
@@ -616,197 +1252,11 @@
           
         </a></li>
       
-        <li><a class="flat-box" title="https://mxclub.github.io/resume/" href="https://mxclub.github.io/resume/"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;简历主题
-          </div>
-          
-        </a></li>
-      
     </ul>
   </div>
 </section>
 
             
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-            
-              <section class='widget grid'>
-  
-<header class='pure'>
-  <div><i class="fas fa-map-signs fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;站内导航</div>
-  
-</header>
-
-  <div class='content pure'>
-    <ul class="grid navgation">
-      
-        <li><a class="flat-box" title="/" href="/"
-          
-          
-          id="home">
-          
-            <i class="fas fa-clock fa-fw" aria-hidden="true"></i>
-          
-          近期文章
-        </a></li>
-      
-        <li><a class="flat-box" title="/blog/archives/" href="/blog/archives/"
-          
-            rel="nofollow"
-          
-          
-          id="blogarchives">
-          
-            <i class="fas fa-archive fa-fw" aria-hidden="true"></i>
-          
-          文章归档
-        </a></li>
-      
-        <li><a class="flat-box" title="/projects/" href="/projects/"
-          
-          
-          id="projects">
-          
-            <i class="fas fa-code-branch fa-fw" aria-hidden="true"></i>
-          
-          开源项目
-        </a></li>
-      
-        <li><a class="flat-box" title="/friends/" href="/friends/"
-          
-            rel="nofollow"
-          
-          
-          id="friends">
-          
-            <i class="fas fa-link fa-fw" aria-hidden="true"></i>
-          
-          我的友链
-        </a></li>
-      
-        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/" href="https://xaoxuu.com/wiki/material-x/"
-          
-            rel="nofollow"
-          
-          
-          id="https:xaoxuu.comwikimaterial-x">
-          
-            <i class="fas fa-book fa-fw" aria-hidden="true"></i>
-          
-          主题文档
-        </a></li>
-      
-        <li><a class="flat-box" title="/about/" href="/about/"
-          
-            rel="nofollow"
-          
-          
-          id="about">
-          
-            <i class="fas fa-info-circle fa-fw" aria-hidden="true"></i>
-          
-          关于小站
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
-
-            
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-            
-              
-
-            
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-            
-              
-
-            
-          
-        
-          
-          
-        
-          
           
         
       
@@ -821,23 +1271,7 @@
     <div class="social-wrapper">
       
         
-          <a href="/atom.xml"
-            class="social fas fa-rss flat-btn"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-          </a>
-        
-      
-        
-          <a href="mailto:me@xaoxuu.com"
-            class="social fas fa-envelope flat-btn"
-            target="_blank"
-            rel="external nofollow noopener noreferrer">
-          </a>
-        
-      
-        
-          <a href="https://github.com/xaoxuu"
+          <a href="https://github.com/Javachenkang"
             class="social fab fa-github flat-btn"
             target="_blank"
             rel="external nofollow noopener noreferrer">
@@ -845,8 +1279,32 @@
         
       
         
-          <a href="https://music.163.com/#/user/home?id=63035382"
+          <a href="https://i.csdn.net/#/uc/profile"
+            class="social fab fa-cuttlefish flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="mailto:me@19951677741@163.com"
+            class="social fas fa-envelope flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="https://music.163.com/#/user/home?id=343905057"
             class="social fas fa-headphones-alt flat-btn"
+            target="_blank"
+            rel="external nofollow noopener noreferrer">
+          </a>
+        
+      
+        
+          <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=2058386844&amp;site=qq&amp;menu=yes"
+            class="social fab fa-qq flat-btn"
             target="_blank"
             rel="external nofollow noopener noreferrer">
           </a>
@@ -871,6 +1329,7 @@
   </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
+
 
 
       <script>setLoadingBarProgress(60);</script>
@@ -926,31 +1385,6 @@
 
 
 
-
-  
-  
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-    <script type="text/javascript">
-      $(function(){
-        if ('.cover') {
-          $('.cover').backstretch(
-          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        } else {
-          $.backstretch(
-          ["https://img.vim-cn.com/29/91197b04c13f512f734a76d4ac422d89dbe229.jpg"],
-          {
-            duration: "6000",
-            fade: "2500"
-          });
-        }
-      });
-    </script>
-  
 
 
 
@@ -1084,5 +1518,7 @@
 
 
   <script>setLoadingBarProgress(100);</script>
+<!--单击显示文字-->
+<script type="text/javascript" src="/js/click_show_text.js"></script>
 </body>
 </html>

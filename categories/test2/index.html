@@ -50,7 +50,12 @@
 <canvas id="canvas" width="1440" height="900" ></canvas>
 <script type="text/javascript" src="/js/DigitalRain.js"></script>
 <!-- 雪花特效 -->
-<script type="text/javascript" src="/js/snow.js"></script>
+<!--<script type="text/javascript" src="/js/snow.js"></script>-->
+<!--流动线条-->
+<!--
+<script type="text/javascript" color="0,0,255" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+-->
+
 
 <!--点击烟花爆炸效果-->
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
@@ -87,16 +92,27 @@
             
             
             id="home">
-            <i class='fas fa-rss fa-fw'></i>&nbsp;主页
+            <i class='fas fa-home fa-fw'></i>&nbsp;主页
           </a>
         </li>
       
         <li>
-          <a class="nav home" href="/projects/"
+          <a class="nav home" href="/categories/"
             
             
-            id="projects">
-            <i class='fas fa-code-branch fa-fw'></i>&nbsp;项目
+            id="categories">
+            <i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/tags/"
+            
+              rel="nofollow"
+            
+            
+            id="tags">
+            <i class='fas fa-tags fa-fw'></i>&nbsp;标签
           </a>
         </li>
       
@@ -107,7 +123,29 @@
             
             
             id="friends">
-            <i class='fas fa-link fa-fw'></i>&nbsp;友链
+            <i class='fas fa-users fa-fw'></i>&nbsp;朋友
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/messageboard/"
+            
+              rel="nofollow"
+            
+            
+            id="messageboard">
+            <i class='fas fa-comments fa-fw'></i>&nbsp;留言
+          </a>
+        </li>
+      
+        <li>
+          <a class="nav home" href="/resources/"
+            
+              rel="nofollow"
+            
+            
+            id="resources">
+            <i class='fas fa-cubes fa-fw'></i>&nbsp;资源
           </a>
         </li>
       
@@ -130,7 +168,7 @@
 <br/>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-<div style="text-align: center;font-weight: bold;color: #1BC3FB;">
+<div style="text-align: center;font-weight: bold;color: #000000;">
   <span id="subtitle"></span>
   <span id="typed-cursor"></span>
 </div>
@@ -170,40 +208,82 @@
                   
                   
                   id="home">
-									<i class='fas fa-grin fa-fw'></i>&nbsp;示例
+									<i class='fas fa-home fa-fw'></i>&nbsp;主页
 								</a>
 							</li>
       			
   						<li>
-								<a class="nav flat-box" href="/blog/categories/"
-                  
-                    rel="nofollow"
+								<a class="nav flat-box" href="/categories/"
                   
                   
-                  id="blogcategories">
+                  id="categories">
 									<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
 								</a>
 							</li>
       			
   						<li>
-								<a class="nav flat-box" href="/blog/tags/"
+								<a class="nav flat-box" href="/tags/"
                   
                     rel="nofollow"
                   
                   
-                  id="blogtags">
-									<i class='fas fa-hashtag fa-fw'></i>&nbsp;标签
+                  id="tags">
+									<i class='fas fa-tags fa-fw'></i>&nbsp;标签
 								</a>
 							</li>
       			
   						<li>
-								<a class="nav flat-box" href="/blog/archives/"
+								<a class="nav flat-box" href="/archives/"
                   
                     rel="nofollow"
                   
                   
-                  id="blogarchives">
+                  id="archives">
 									<i class='fas fa-archive fa-fw'></i>&nbsp;归档
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/friends/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="friends">
+									<i class='fas fa-users fa-fw'></i>&nbsp;朋友
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/messageboard/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="messageboard">
+									<i class='fas fa-comments fa-fw'></i>&nbsp;留言
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/resources/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="resources">
+									<i class='fas fa-cubes fa-fw'></i>&nbsp;资源
+								</a>
+							</li>
+      			
+  						<li>
+								<a class="nav flat-box" href="/about/"
+                  
+                    rel="nofollow"
+                  
+                  
+                  id="about">
+									<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
 								</a>
 							</li>
       			
@@ -249,27 +329,27 @@
                 
                 
                 id="home">
-								<i class='fas fa-clock fa-fw'></i>&nbsp;近期文章
+								<i class='fas fa-home fa-fw'></i>&nbsp;主页
 							</a>
             </li>
           
             <li>
-							<a class="nav flat-box" href="/blog/archives/"
+							<a class="nav flat-box" href="/categories/"
+                
+                
+                id="categories">
+								<i class='fas fa-folder-open fa-fw'></i>&nbsp;分类
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/tags/"
                 
                   rel="nofollow"
                 
                 
-                id="blogarchives">
-								<i class='fas fa-archive fa-fw'></i>&nbsp;文章归档
-							</a>
-            </li>
-          
-            <li>
-							<a class="nav flat-box" href="/projects/"
-                
-                
-                id="projects">
-								<i class='fas fa-code-branch fa-fw'></i>&nbsp;开源项目
+                id="tags">
+								<i class='fas fa-tags fa-fw'></i>&nbsp;标签
 							</a>
             </li>
           
@@ -280,18 +360,29 @@
                 
                 
                 id="friends">
-								<i class='fas fa-link fa-fw'></i>&nbsp;我的友链
+								<i class='fas fa-users fa-fw'></i>&nbsp;朋友
 							</a>
             </li>
           
             <li>
-							<a class="nav flat-box" href="https://xaoxuu.com/wiki/material-x/"
+							<a class="nav flat-box" href="/messageboard/"
                 
                   rel="nofollow"
                 
                 
-                id="https:xaoxuu.comwikimaterial-x">
-								<i class='fas fa-book fa-fw'></i>&nbsp;主题文档
+                id="messageboard">
+								<i class='fas fa-comments fa-fw'></i>&nbsp;留言
+							</a>
+            </li>
+          
+            <li>
+							<a class="nav flat-box" href="/resources/"
+                
+                  rel="nofollow"
+                
+                
+                id="resources">
+								<i class='fas fa-cubes fa-fw'></i>&nbsp;资源
 							</a>
             </li>
           
@@ -302,7 +393,7 @@
                 
                 
                 id="about">
-								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于小站
+								<i class='fas fa-info-circle fa-fw'></i>&nbsp;关于
 							</a>
             </li>
           
@@ -316,15 +407,8 @@
   </div>
 
 
+<!--聊天-->
 <!--<script src="//code.tidio.co/liidyf3a5jhwmrjkjksl0exbyq9f7qqd.js" async></script>-->
-<script>
-  (function(i,s,o,g,r,a,m) {i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})
-  (window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/f76a94e3.js","daovoice")
-  daovoice('init', {
-    app_id: "f76a94e3"
-  });
-  daovoice('update');
-</script>
   <div class="l_body">
     <div class='body-wrapper'>
       
@@ -349,7 +433,7 @@
   <div class="aplayer"
     data-theme=""
     data-mini=true 
-    
+    data-autoplay=true 
     data-mode="circulation"
     data-server="netease"
     data-type="song"
@@ -426,7 +510,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>70字</p>
+        <p>169字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -809,14 +893,14 @@
           时间归档
         </a></li>
       
-        <li><a class="flat-box" title="/projects/" href="/projects/"
+        <li><a class="flat-box" title="/resources/" href="/resources/"
           
           
-          id="projects">
+          id="resources">
           
-            <i class="fas fa-rss fa-fw fa-fw" aria-hidden="true"></i>
+            <i class="fas fa-cubes fa-fw" aria-hidden="true"></i>
           
-          资源库
+          资源仓库
         </a></li>
       
         <li><a class="flat-box" title="/friends/" href="/friends/"
@@ -828,7 +912,7 @@
           
             <i class="fas fa-link fa-fw" aria-hidden="true"></i>
           
-          我的友链
+          我的朋友
         </a></li>
       
         <li><a class="flat-box" title="/messageboard/" href="/messageboard/"
@@ -1224,7 +1308,15 @@
 
       <script>setLoadingBarProgress(60);</script>
     </div>
-    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    <script>
+      (function(i,s,o,g,r,a,m) {i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})
+      (window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/f76a94e3.js","daovoice")
+      daovoice('init', {
+        app_id: "f76a94e3"
+      });
+      daovoice('update');
+    </script>
+    <!--<a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>-->
   </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 

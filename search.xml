@@ -8,7 +8,7 @@
       <link href="/2020/02/03/test/"/>
       <url>/2020/02/03/test/</url>
       
-        <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="封面"></p><a id="more"></a>            设置是否在文章列表显示，详情见xaoxuu.com文档↑<h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><p>记录test markdown简单语法以后会在博客中记录markdown语法，包括测试所有页面配置详情见material-x↓</p><ul><li>列表1</li><li>列表2</li><li>列表3</li></ul>]]></content>
+        <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="封面"></p><a id="more"></a>            设置是否在文章列表显示，详情见xaoxuu.com文档↑<h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><p>记录test markdown简单语法以后会在博客中记录markdown语法，包括测试所有页面配置详情见material-x↓</p><p>博客未完成：</p><ul><li>同步透明黑白色</li><li>禁止渲染关于，资源页面（ps：资源页面：同步前端后端项目，官方文档，工具，社区，贴子，关于页面：渲染单页面）</li><li>标题图片ps黑白图制作</li><li>文章目录显示</li><li>页脚信息统计运行时间，文章页脚信息补全</li><li>视频安放</li><li>RSS订阅</li><li>MySSL安全证书</li><li>返回顶页位置定位</li></ul>]]></content>
       
       
       <categories>

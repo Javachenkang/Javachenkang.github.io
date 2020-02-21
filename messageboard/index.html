@@ -47,8 +47,34 @@
 
 <meta name="baidu-site-verification" content="Jl3a3hWOsE">
 <!--禁止别人检查你的代码body中加入ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"-->
-<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
-
+<body oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"
+      ondragstart="window.event.returnValue=false">
+<!--禁止F12查看代码-->
+<!--<script>
+  document.onkeydown = function () {
+    if (window.event && window.event.keyCode == 123) {
+      event.keyCode = 0;
+      event.returnValue = false;
+      return false;
+    }
+  };
+</script>-->
+<!--预加载-->
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.2/js/instantclick-1.2.2.js" type="module"></script>
+<!--百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?3b75f010abc2097bfa568489beccaef5";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<!--MySSL安全证书-->
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+  <a href="https://myssl.com/blogck.cn?from=mysslid" target="_blank" rel="noopener"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
 <!--代码雨-->
 <canvas id="canvas" width="1440" height="900" ></canvas>
 <script type="text/javascript" src="/js/DigitalRain.js"></script>
@@ -60,10 +86,13 @@
 -->
 
 
-<!--点击烟花爆炸效果-->
+<!--点击烟花爆炸和礼花效果切换不同样式在fireworks.js中修改-->
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
 <script type="text/javascript" src="/js/fireworks.js"></script>
+
+<!--加密博客依赖-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <!--浏览器搞笑标题-->
 <script type="text/javascript" src="/js/FunnyTitle.js"></script>
@@ -460,7 +489,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2020-02-06</p>
+    <p>2020-02-18</p>
   </a>
 </div>
 
@@ -496,7 +525,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>29字</p>
+        <p>19字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -526,7 +555,7 @@
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
         <blockquote>
-<p>有什么想问的就快去留言吧！这个评论有邮箱回复哦！我看到会回复的😛😛😛</p>
+<p>有什么想问的就快去留言吧！我看到会回复的😛😛😛</p>
 </blockquote>
 <p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="图片"></p>
 
@@ -559,7 +588,13 @@
     </section>
   </article>
 
-
+<!--评论区特效-->
+<script src="/js/activate-power-mode.min.js"></script>
+<script>
+  POWERMODE.colorful = true;         /*评论区礼花*/
+  POWERMODE.shake = false;           /*评论区抖动*/
+  document.body.addEventListener('input', POWERMODE);
+</script>
 
 
 
@@ -713,6 +748,9 @@
           
           
         
+          
+          
+        
       
         
           
@@ -813,33 +851,47 @@
           
           
         
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
           
           
         
       
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
         
           
           
@@ -966,6 +1018,9 @@
         
           
           
+        
+          
+          
             
               
   <section class='widget category'>
@@ -1039,6 +1094,9 @@
         
           
           
+        
+          
+          
             
               
   <section class='widget tagcloud'>
@@ -1064,114 +1122,6 @@
 
 
             
-          
-        
-          
-          
-        
-          
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-            
-              <section class='widget list'>
-  
-<header class='material'>
-  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
-  
-</header>
-
-  <div class='content material'>
-    <ul class="entry">
-      
-        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/index.html" href="https://xaoxuu.com/wiki/material-x/index.html"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;制作本站
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;图片在线压缩
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;生成Favicon
-          </div>
-          
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
-
-            
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
           
         
           
@@ -1233,23 +1183,81 @@
       
     </div>
   
-  <br>
-  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
-</div>
-  <div>
-    Use
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
-    as theme
-    
-      , 
-      total visits
-      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      times
-    
-    . 
-  </div>
+      <br>
+      <span style="color: #111111">Copyright&nbsp;@&nbsp;2020</span>&nbsp;<a href="https://blogck.cn" rel="license" target="_blank">CK'BLOG</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span style="color: #111111" id="timeDate"></span><span style="color: #111111" id="times"></span><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <a href="https://tongji.baidu.com/web/welcome/ico?s=3b75f010abc2097bfa568489beccaef5" target="_blank" rel="noopener">百度统计</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <script type="text/javascript">
+          var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+          document.write(
+              unescape("%3Cspan id='cnzz_stat_icon_1278621910'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278621910%26show%3Dpic' type='text/javascript'%3E%3C/script%3E")
+          );
+      </script>
+      <br>
+
+      <!--徽章样式-->
+      <div style="margin-top: 30px">
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://hexo.io/zh-cn/" target="_blank" title="Hexo博客框架">
+              <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://github.com/Javachenkang" target="_blank" title="博主GitHub">
+              <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">GitHub</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://www.aliyun.com" target="_blank" title="阿里云相关服务">
+              <span class="badge-subject">DNR</span><span class="badge-value bg-firebrick">Aliyun</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://www.jsdelivr.com" target="_blank" title="jsDelivr提供CDN加速">
+              <span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://xaoxuu.com" target="_blank" title="Material X主题作者">
+              <span class="badge-subject">Theme</span><span class="badge-value bg-blue">Material X</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+              <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <span title="本站总访问量" class="badge-subject">PV</span><span class="badge-value bg-brightgreen"><span id="busuanzi_value_site_pv"></span></span>
+          </div>
+          <div class="github-badge">
+              <span title="本站访客数" class="badge-subject">UV</span><span class="badge-value bg-blue"><span id="busuanzi_value_site_uv"></span></span>
+          </div>
+          <div class="github-badge">
+              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">473</span>
+          </div>
+      </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
+<!--不蒜子用法参考不蒜子文档-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("02/01/2020 8:00:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "CK'BLOG已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()",250);
+</script>
 
 
 
@@ -1263,7 +1271,7 @@
       });
       daovoice('update');
     </script>
-    <!--<a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>-->
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)' style="background-color: #111111"></a>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 

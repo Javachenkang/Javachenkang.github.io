@@ -43,12 +43,38 @@
 
   
   
-<meta name="generator" content="Hexo 4.2.0"></head>
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 
 <meta name="baidu-site-verification" content="Jl3a3hWOsE">
 <!--禁止别人检查你的代码body中加入ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"-->
-<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false">
-
+<body oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"
+      ondragstart="window.event.returnValue=false">
+<!--禁止F12查看代码-->
+<!--<script>
+  document.onkeydown = function () {
+    if (window.event && window.event.keyCode == 123) {
+      event.keyCode = 0;
+      event.returnValue = false;
+      return false;
+    }
+  };
+</script>-->
+<!--预加载-->
+<script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.2/js/instantclick-1.2.2.js" type="module"></script>
+<!--百度统计-->
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?3b75f010abc2097bfa568489beccaef5";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+<!--MySSL安全证书-->
+<div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
+  <a href="https://myssl.com/blogck.cn?from=mysslid" target="_blank" rel="noopener"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
+</div>
 <!--代码雨-->
 <canvas id="canvas" width="1440" height="900" ></canvas>
 <script type="text/javascript" src="/js/DigitalRain.js"></script>
@@ -60,10 +86,13 @@
 -->
 
 
-<!--点击烟花爆炸效果-->
+<!--点击烟花爆炸和礼花效果切换不同样式在fireworks.js中修改-->
 <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas>
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
 <script type="text/javascript" src="/js/fireworks.js"></script>
+
+<!--加密博客依赖-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 <!--浏览器搞笑标题-->
 <script type="text/javascript" src="/js/FunnyTitle.js"></script>
@@ -525,7 +554,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>171字</p>
+        <p>465字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -554,22 +583,40 @@
 
     <section class="article typo">
       <div class="article-entry" itemprop="articleBody">
-        <p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="封面"></p>
-<a id="more"></a>            设置是否在文章列表显示，详情见xaoxuu.com文档↑
+        <fancybox>
 
-<h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><p>记录test markdown简单语法以后会在博客中记录markdown语法，包括测试所有页面配置详情见material-x↓</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="封面"></p>
+</fancybox>
+
+<a id="more"></a>            设置是否在文章列表显示，详情见xaoxuu.com文档本篇文章包含了文档大部分属性↑
+
+<h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><p>记录test markdown简单语法，以后会在博客中记录markdown语法，包括测试所有页面配置详情见material-x。<br>以后做些功能以及项目都会记录下来</p>
 <p>博客未完成：</p>
 <ul>
 <li>细节同步透明黑白色</li>
-<li>禁止渲染关于，资源页面（ps：资源页面：同步前端后端项目，官方文档，工具，社区，贴子，关于页面：渲染单页面）</li>
+<li>禁止渲染关于，资源页面（ps：资源页面：同步前端后端项目，官方文档，工具，社区，贴子，关于页面：渲染单页面）（2020-2-19）</li>
 <li>标题图片ps黑白图制作</li>
-<li>文章目录显示</li>
-<li>页脚信息统计运行时间，文章页脚信息补全</li>
-<li>视频安放</li>
-<li>RSS订阅</li>
-<li>MySSL安全证书</li>
-<li>返回顶页位置定位</li>
+<li>文章目录显示（2020-2-17）</li>
+<li>页脚信息统计运行时间，文章页脚信息补全（2020-2-17）</li>
+<li>视频集成（2020-2-16 ps:微软云端上传嵌入，加载太慢已取消）</li>
+<li>MySSL安全证书（2020-2-16）</li>
+<li>返回顶页位置定位（2020-2-15）</li>
+<li>评论区输入文字特效（202-2-18）</li>
+<li>博客加密（2020-2-18 ps：解密后本文目录无法显示，解决办法（待完成）：onload 事件发生时调用了哪些函数,将本文目录调用代码粘贴至博客内容中）</li>
 </ul>
+<h2 id="博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录"><a href="#博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录" class="headerlink" title="博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录"></a>博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录</h2><p>分享嵌入（简单方便）</p>
+<iframe src="//player.bilibili.com/player.html?aid=37455527&cid=65838554&page=1" width="100%" height="400" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+</iframe>
+前1.20二胡声音是口技，你敢信？
+<iframe src="//player.bilibili.com/player.html?aid=7213917&cid=11794779&page=1" width="100%" height="400" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> 
+</iframe>
+
+<p>dogecloud上传嵌入（自定义设置信息简单好用👍）</p>
+<iframe id="dogePlayerFrame" src="https://player.dogecloud.com/web/player.html?vcode=a7e62f109136f162&userId=957&autoPlay=false&inFrame=true" width="100%" height="400" allowfullscreen="true" msallowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" allowtransparency="true" scrolling="no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerPolicy="unsafe-url">
+</iframe>
+
+<p>dplayer嵌入（需要服务器，pic设置封面具体属性见文档功能很多）</p>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px; width:100%; height:400;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"http://lc-cSmw1iDK.cn-n1.lcfile.com/16a7919e886adcd9aaa8/Justin%20Bieber%20-%20Yummy.mp4","pic":"https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
 
       </div>
       
@@ -582,10 +629,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-06T12:29:53+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-02-20T15:30:02+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020-02-06</p>
+    <p>更新于 2020-02-20</p>
   </a>
 </div>
 
@@ -607,7 +654,10 @@
       
         <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
           
-          href="http://connect.qq.com/widget/shareqq/index.html?url=https://blogck.cn/2020/02/03/test/&title=测试 | CK'BLOG&pics=https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg&summary="
+          href="http://connect.qq.com/widget/shareqq/index.html?url=https://blogck.cn/2020/02/03/test/&title=测试 | CK'BLOG&pics=https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg&summary=
+
+
+"
           
           >
           
@@ -619,7 +669,10 @@
       
         <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
           
-          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blogck.cn/2020/02/03/test/&title=测试 | CK'BLOG&pics=https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg&summary="
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blogck.cn/2020/02/03/test/&title=测试 | CK'BLOG&pics=https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg&summary=
+
+
+"
           
           >
           
@@ -631,7 +684,10 @@
       
         <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
           
-          href="http://service.weibo.com/share/share.php?url=https://blogck.cn/2020/02/03/test/&title=测试 | CK'BLOG&pics=https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg&summary="
+          href="http://service.weibo.com/share/share.php?url=https://blogck.cn/2020/02/03/test/&title=测试 | CK'BLOG&pics=https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg&summary=
+
+
+"
           
           >
           
@@ -702,7 +758,13 @@
     </section>
   </article>
 
-
+<!--评论区特效-->
+<script src="/js/activate-power-mode.min.js"></script>
+<script>
+  POWERMODE.colorful = true;         /*评论区礼花*/
+  POWERMODE.shake = false;           /*评论区抖动*/
+  document.body.addEventListener('input', POWERMODE);
+</script>
 
 
 
@@ -863,6 +925,9 @@
           
           
         
+          
+          
+        
       
         
           
@@ -963,33 +1028,61 @@
           
           
         
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
           
           
         
       
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+            
+              
+  <section class='widget toc-wrapper'>
+    
+<header class='material'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+  
+</header>
+
+    <div class='content material'>
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#这是我的第一篇博客"><span class="toc-text">这是我的第一篇博客</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录"><span class="toc-text">博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录</span></a></li></ol></li></ol>
+    </div>
+  </section>
+
+
+            
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+      
+        
+          
+          
         
           
           
@@ -1116,6 +1209,9 @@
         
           
           
+        
+          
+          
             
               
   <section class='widget category'>
@@ -1189,6 +1285,9 @@
         
           
           
+        
+          
+          
             
               
   <section class='widget tagcloud'>
@@ -1214,114 +1313,6 @@
 
 
             
-          
-        
-          
-          
-        
-          
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-            
-              <section class='widget list'>
-  
-<header class='material'>
-  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
-  
-</header>
-
-  <div class='content material'>
-    <ul class="entry">
-      
-        <li><a class="flat-box" title="https://xaoxuu.com/wiki/material-x/index.html" href="https://xaoxuu.com/wiki/material-x/index.html"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;制作本站
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;图片在线压缩
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;生成Favicon
-          </div>
-          
-        </a></li>
-      
-    </ul>
-  </div>
-</section>
-
-            
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
           
         
           
@@ -1383,23 +1374,81 @@
       
     </div>
   
-  <br>
-  <div><p>Blog content follows the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) License</a></p>
-</div>
-  <div>
-    Use
-    <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a>
-    as theme
-    
-      , 
-      total visits
-      <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
-      times
-    
-    . 
-  </div>
+      <br>
+      <span style="color: #111111">Copyright&nbsp;@&nbsp;2020</span>&nbsp;<a href="https://blogck.cn" rel="license" target="_blank">CK'BLOG</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <span style="color: #111111" id="timeDate"></span><span style="color: #111111" id="times"></span><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <a href="https://tongji.baidu.com/web/welcome/ico?s=3b75f010abc2097bfa568489beccaef5" target="_blank" rel="noopener">百度统计</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <script type="text/javascript">
+          var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");
+          document.write(
+              unescape("%3Cspan id='cnzz_stat_icon_1278621910'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278621910%26show%3Dpic' type='text/javascript'%3E%3C/script%3E")
+          );
+      </script>
+      <br>
+
+      <!--徽章样式-->
+      <div style="margin-top: 30px">
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://hexo.io/zh-cn/" target="_blank" title="Hexo博客框架">
+              <span class="badge-subject">Powered</span><span class="badge-value bg-blue">Hexo</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://github.com/Javachenkang" target="_blank" title="博主GitHub">
+              <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen">GitHub</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://www.aliyun.com" target="_blank" title="阿里云相关服务">
+              <span class="badge-subject">DNR</span><span class="badge-value bg-firebrick">Aliyun</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://www.jsdelivr.com" target="_blank" title="jsDelivr提供CDN加速">
+              <span class="badge-subject">CDN</span><span class="badge-value bg-orange">jsDelivr</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://xaoxuu.com" target="_blank" title="Material X主题作者">
+              <span class="badge-subject">Theme</span><span class="badge-value bg-blue">Material X</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <a style="color: #fff" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+              <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span>
+              </a>
+          </div>
+          <div class="github-badge">
+              <span title="本站总访问量" class="badge-subject">PV</span><span class="badge-value bg-brightgreen"><span id="busuanzi_value_site_pv"></span></span>
+          </div>
+          <div class="github-badge">
+              <span title="本站访客数" class="badge-subject">UV</span><span class="badge-value bg-blue"><span id="busuanzi_value_site_uv"></span></span>
+          </div>
+          <div class="github-badge">
+              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">473</span>
+          </div>
+      </div>
 </footer>
 <script>setLoadingBarProgress(80);</script>
+<!--不蒜子用法参考不蒜子文档-->
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+<script>
+    var now = new Date();
+    function createtime() {
+        var grt= new Date("02/01/2020 8:00:00");//在此处修改你的建站时间，格式：月/日/年 时:分:秒
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;}
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;}
+        document.getElementById("timeDate").innerHTML = "CK'BLOG已安全运行 "+dnum+" 天 ";
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    }
+    setInterval("createtime()",250);
+</script>
 
 
 
@@ -1413,7 +1462,7 @@
       });
       daovoice('update');
     </script>
-    <!--<a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>-->
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)' style="background-color: #111111"></a>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 

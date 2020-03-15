@@ -99,6 +99,7 @@
   
   
   <div class="cover-wrapper">
+    <!--更换网页开头部分高度half为full，half：一半  full：全部，满的 英文单词并不是作用于标签，而是css中写了样式作用在half上，links去除half-->
     <cover class='cover links half'>
       
         <!--开头部分-->
@@ -342,7 +343,8 @@
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<!--设置内联样式，让这里优先于css文件中的样式-->
+				<li class='s-comment'><a style="background-color: #111111" class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
         
           <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
         
@@ -1240,8 +1242,17 @@
     </div>
   
       <br>
-      <span style="color: #111111">Copyright&nbsp;@&nbsp;2020</span>&nbsp;<a href="https://blogck.cn" rel="license" target="_blank">CK'BLOG</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <div class="footer-end1">
+          <a href="https://www.upyun.com/" target="_blank" alt="Server provider" rel="nofollow">
+              <img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/%E5%8F%88%E6%8B%8D%E4%BA%91_logo5.png" data-original="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/%E5%8F%88%E6%8B%8D%E4%BA%91_logo5.png" alt="upyun" style="height: 2.2em; max-height: 2.5em;padding-bottom: 0px;">
+          </a>
+      </div>
+      <br>
       <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.4/images/icp.png"><a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener" data-pjax-state="">皖ICP备20002849号-1</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34050302000310" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/beian.png">皖公网安备34050302000310号</a>
+      <br>
+      <br>
+      <span style="color: #111111">Copyright&nbsp;@&nbsp;2020</span>&nbsp;<a href="https://blogck.cn" rel="license" target="_blank">CK'BLOG</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <span style="color: #111111" id="timeDate"></span><span style="color: #111111" id="times"></span><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <a href="https://tongji.baidu.com/web/welcome/ico?s=3b75f010abc2097bfa568489beccaef5" target="_blank" rel="noopener">百度统计</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <script type="text/javascript">
@@ -1291,7 +1302,7 @@
               <span title="本站访客数" class="badge-subject">UV</span><span class="badge-value bg-blue"><span id="busuanzi_value_site_uv"></span></span>
           </div>-->
           <div class="github-badge">
-              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">713</span>
+              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">965</span>
           </div>
       </div>
 </footer>

@@ -99,6 +99,7 @@
   
   
   <div class="cover-wrapper">
+    <!--更换网页开头部分高度half为full，half：一半  full：全部，满的 英文单词并不是作用于标签，而是css中写了样式作用在half上，post去除half-->
     <cover class='cover post half'>
       
         <!--开头部分-->
@@ -342,7 +343,8 @@
 		<div class='nav-sub container container--flex'>
 			<a class="logo flat-box"></a>
 			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
+				<!--设置内联样式，让这里优先于css文件中的样式-->
+				<li class='s-comment'><a style="background-color: #111111" class="flat-btn fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
         
           <li class='s-toc'><a class="flat-btn fas fa-list fa-fw" href='javascript:void(0)'></a></li>
         
@@ -522,7 +524,7 @@
   <div class='new-meta-item category'>
     <a href='/categories/%E5%88%86%E7%B1%BBC/%E5%88%86%E7%B1%BBD/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>hexo&nbsp;/&nbsp;test&nbsp;/&nbsp;test2&nbsp;/&nbsp;test3&nbsp;/&nbsp;分类A&nbsp;/&nbsp;分类B&nbsp;/&nbsp;分类C&nbsp;/&nbsp;分类D</p>
+      <p>test&nbsp;/&nbsp;hexo&nbsp;/&nbsp;test2&nbsp;/&nbsp;test3&nbsp;/&nbsp;分类A&nbsp;/&nbsp;分类B&nbsp;/&nbsp;分类C&nbsp;/&nbsp;分类D</p>
     </a>
   </div>
 
@@ -554,14 +556,14 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>705字</p>
+        <p>957字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
       <a class='notlink'>
         <i class="fas fa-hourglass-half" aria-hidden="true"></i>
         <p>阅读时长≈</p>
-        <p>2分</p>
+        <p>3分</p>
       </a>
     </div>
   
@@ -593,7 +595,7 @@
 <h1 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a>这是我的第一篇博客</h1><p>记录test markdown简单语法，以后会在博客中记录markdown语法，包括测试所有页面配置详情见material-x。<br>以后做些功能以及项目都会记录下来</p>
 <p>博客细节完成：</p>
 <ul>
-<li>细节同步透明黑白色</li>
+<li>细节同步透明黑白色（2020-3-13）：从颜色表文件入手，部分细节自己设定</li>
 <li>禁止渲染关于，资源页面（ps：资源页面：同步前端后端项目，官方文档，工具，社区，贴子，关于页面：渲染单页面）（2020-2-19）</li>
 <li>标题图片ps黑白图制作</li>
 <li>文章目录显示（2020-2-17）</li>
@@ -604,8 +606,10 @@
 <li>评论区输入文字特效（2020-2-18）</li>
 <li>博客加密（2020-2-18 ps：解密后本文目录无法显示，解决办法（待完成）：onload 事件发生时调用了哪些函数,将本文目录调用代码粘贴至博客内容中）</li>
 <li>ICP备案完成更换服务器地址域名IP+视频信息（2020-3-5）</li>
-<li>公安备案</li>
+<li>公安备案(2020-3-13)图片上传CDN仓库</li>
 <li>优化网站速度取消不蒜子统计（2020-3-5）</li>
+<li>更换网页高度half（2020-3-7）</li>
+<li>error问题解决阿里云leancloud域名解析暂停（2020-3-12）：自己在域名解析时保存了3个解析（3个一样其中记录值不同）-&gt;记录类型：CNAME，主机记录：@。试想其中2个解析值一个解析为GitHub一个为Coding这2个必然不会冲突因为都指向网站，而leancloud域名指向为文件服务域名，而此官方文档计价方式明确规定https无流量用量，之前一直用的是官方自己的域名可以随意访问。所以当设置了这样的解析会error</li>
 </ul>
 <h2 id="博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录"><a href="#博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录" class="headerlink" title="博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录"></a>博客在完成后，我会将从搭建到每一个细节都会回顾并且记录到blog中，一是对自己搭建blog的回顾，二是里面真的很多功能需要细节记录</h2><p>分享嵌入（简单方便）</p>
 <iframe src="//player.bilibili.com/player.html?aid=37455527&cid=65838554&page=1" width="100%" height="400" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
@@ -620,10 +624,11 @@
 
 <p>准备测试 ： 用自己域名测试用量流量限制（√），但是用共享域名却好像没有用量限制（？）<br>解决：<br>1.使用共享域名但是有时间限制会取消<br>2.寻找日流量大的云存储（又拍云、七牛云）<br>网站有时候打开error：document not fount ？<br>猜想：<br>1.是不是云存储流量用完？但是最多也只是视频加载失败而且网站首页也没有视频？</p>
 <p>2.是不是域名解析指向问题？因为项目没有存储在阿里云服务器上而是存储在github和coding上，所以解析了1.blogck.cn和2.blogck.cn来让域名有点访问量防止被阿里云域名警告</p>
-<p>3.域名绑定leancloud文件云存储添加了解析</p>
-<p>dplayer嵌入（leancloud存储有流量限制详情见官方文档（要钱），pic设置封面具体属性见文档功能很多）取消了url</p>
-<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px; width:100%; height:400;"></div><p>no url specified, no dplayer _(:3」∠)_</p>
-<div id="dplayer1" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px; width:100%; height:400;"></div><p>no url specified, no dplayer _(:3」∠)_</p>
+<p>3.域名绑定leancloud文件云存储添加了解析（√）</p>
+<p>dplayer嵌入（leancloud存储有流量限制详情见官方文档（要钱），pic设置封面具体属性见文档功能很多）<br>已更换又拍云（现用测试域名加速）：1.加入又拍云联盟2.cdn创建服务更换云存储加速域名</p>
+<div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px; width:100%; height:400;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","video":{"url":"http://ckblog.test.upcdn.net/Vicetone%2CCozi%20Zuehlsdorff%20-%20Nevada.mp4","pic":"https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+
+
 
       </div>
       
@@ -636,10 +641,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-06T09:37:40+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-03-14T23:24:48+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>更新于 2020-03-06</p>
+    <p>更新于 2020-03-14</p>
   </a>
 </div>
 
@@ -1382,8 +1387,17 @@
     </div>
   
       <br>
-      <span style="color: #111111">Copyright&nbsp;@&nbsp;2020</span>&nbsp;<a href="https://blogck.cn" rel="license" target="_blank">CK'BLOG</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <div class="footer-end1">
+          <a href="https://www.upyun.com/" target="_blank" alt="Server provider" rel="nofollow">
+              <img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/%E5%8F%88%E6%8B%8D%E4%BA%91_logo5.png" data-original="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/%E5%8F%88%E6%8B%8D%E4%BA%91_logo5.png" alt="upyun" style="height: 2.2em; max-height: 2.5em;padding-bottom: 0px;">
+          </a>
+      </div>
+      <br>
       <img src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.4/images/icp.png"><a href="http://www.beian.miit.gov.cn/" target="_blank" rel="noopener" data-pjax-state="">皖ICP备20002849号-1</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+      <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=34050302000310" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;"><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/beian.png">皖公网安备34050302000310号</a>
+      <br>
+      <br>
+      <span style="color: #111111">Copyright&nbsp;@&nbsp;2020</span>&nbsp;<a href="https://blogck.cn" rel="license" target="_blank">CK'BLOG</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <span style="color: #111111" id="timeDate"></span><span style="color: #111111" id="times"></span><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <a href="https://tongji.baidu.com/web/welcome/ico?s=3b75f010abc2097bfa568489beccaef5" target="_blank" rel="noopener">百度统计</a><span style="color: #111111">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
       <script type="text/javascript">
@@ -1433,7 +1447,7 @@
               <span title="本站访客数" class="badge-subject">UV</span><span class="badge-value bg-blue"><span id="busuanzi_value_site_uv"></span></span>
           </div>-->
           <div class="github-badge">
-              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">713</span>
+              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">965</span>
           </div>
       </div>
 </footer>

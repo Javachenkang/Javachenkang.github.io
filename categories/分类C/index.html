@@ -47,10 +47,11 @@
 
 <meta name="baidu-site-verification" content="Jl3a3hWOsE">
 <!--禁止别人检查你的代码body中加入ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"-->
-<body oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false"
-      ondragstart="window.event.returnValue=false">
+<body>
+<!--禁止右击检查代码-->
+<!--oncontextmenu="window.event.returnValue=false" onselectstart="event.returnValue=false" ondragstart="window.event.returnValue=false"-->
 <!--禁止F12查看代码-->
-<script>
+<!--<script>
   document.onkeydown = function () {
     if (window.event && window.event.keyCode == 123) {
       event.keyCode = 0;
@@ -58,7 +59,7 @@
       return false;
     }
   };
-</script>
+</script>-->
 <!--预加载-->
 <script src="https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.2/js/instantclick-1.2.2.js" type="module"></script>
 <!--百度统计-->
@@ -100,11 +101,12 @@
   
   <div class="cover-wrapper">
     <!--更换网页开头部分高度half为full，half：一半  full：全部，满的 英文单词并不是作用于标签，而是css中写了样式作用在half上，去除half-->
+    <!--is_home()函数判断是否为主页面,true:调用_config.yml中cover.height,false:half-->
     <cover class='cover  half'>
       
         <!--开头部分-->
 
-  <h1 class='title'>CK'BLOG</h1>
+  <img class='logo' src='https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.1.2/images/logo.png'/>
 
 
 
@@ -327,7 +329,7 @@
 			
 				<div class="m_search">
 					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="Search" />
+						<input type="text" class="input u-search-input" placeholder="搜索" />
 						<i class="icon fas fa-search fa-fw"></i>
 					</form>
 				</div>
@@ -530,7 +532,7 @@
   <div class='new-meta-item category'>
     <a href='/categories/%E5%88%86%E7%B1%BBC/%E5%88%86%E7%B1%BBD/' rel="nofollow">
       <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>test&nbsp;/&nbsp;hexo&nbsp;/&nbsp;test2&nbsp;/&nbsp;test3&nbsp;/&nbsp;分类A&nbsp;/&nbsp;分类B&nbsp;/&nbsp;分类C&nbsp;/&nbsp;分类D</p>
+      <p>hexo&nbsp;/&nbsp;test&nbsp;/&nbsp;test2&nbsp;/&nbsp;test3&nbsp;/&nbsp;分类A&nbsp;/&nbsp;分类B&nbsp;/&nbsp;分类C&nbsp;/&nbsp;分类D</p>
     </a>
   </div>
 
@@ -544,7 +546,7 @@
       <a class='notlink'>
         <i class="fas fa-keyboard" aria-hidden="true"></i>
         <p>字数统计:</p>
-        <p>957字</p>
+        <p>1k字</p>
       </a>
     </div>
     <div class="new-meta-item readtime">
@@ -582,7 +584,7 @@
     <div class="article-entry" itemprop="articleBody">
       <fancybox>
 
-<p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="封面"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.0/images/ck_blog.jpg" alt="封面"><br><img src="https://cdn.jsdelivr.net/gh/Javachenkang/CDN@1.1.1/images/2.jpg" alt="封面"></p>
 </fancybox>
       
         <div class="readmore">
@@ -1405,7 +1407,7 @@
               <span title="本站访客数" class="badge-subject">UV</span><span class="badge-value bg-blue"><span id="busuanzi_value_site_uv"></span></span>
           </div>-->
           <div class="github-badge">
-              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">965</span>
+              <span title="本站字数统计" class="badge-subject">WordCount</span><span class="badge-value bg-blueviolet">1k</span>
           </div>
       </div>
 </footer>

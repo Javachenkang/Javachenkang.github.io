@@ -1,4 +1,4 @@
-body{
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>body{
     cursor: url(https://cdn.jsdelivr.net/gh/TRHX/CDN-for-itrhx.com@2.0.3/images/mouse.cur),default;
 }
 #head-nav {
